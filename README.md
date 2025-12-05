@@ -8,8 +8,6 @@ This repository contains the full implementation, experiments, and analysis for 
 This project reproduces the **ADC-GAN (Hou et al., ICML 2022)** paper and compares it against **AC-GAN** and **PD-GAN** under a unified BigGAN-CIFAR10 framework.  
 It also introduces a small extension **γ-ADC-GAN**, which scales the auxiliary discriminative classifier loss by a factor γ.
 
-The complete project report (IEEE format) is included in the repository.
-
 ---
 
 # 1. Overview
