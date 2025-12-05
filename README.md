@@ -3,7 +3,7 @@
 This repository contains the full implementation, experiments, and analysis for my CS436/536 final project:
 
 **“Conditional GANs with Auxiliary Discriminative Classifier: Reproduction and Early Extensions”**  
-*(Mudit Golchha, Binghamton University)*
+*(Crystal Sembhi, Mudit Golchha, Binghamton University)*
 
 This project reproduces the **ADC-GAN (Hou et al., ICML 2022)** paper and compares it against **AC-GAN** and **PD-GAN** under a unified BigGAN-CIFAR10 framework.  
 It also introduces a small extension **γ-ADC-GAN**, which scales the auxiliary discriminative classifier loss by a factor γ.
