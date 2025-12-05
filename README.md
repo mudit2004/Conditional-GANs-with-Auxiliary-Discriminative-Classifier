@@ -28,7 +28,7 @@ Fake class k → 2k + 1
 
 This improves **stability**, **diversity**, and **early FID/IS** performance.
 
-In this project, I:
+In this project:
 
 1. Reproduce ADC-GAN on CIFAR-10 using the BigGAN backbone  
 2. Implement and compare AC-GAN and PD-GAN using identical training settings  
