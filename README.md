@@ -40,31 +40,54 @@ In this project:
 # 2. Repository Structure
 
 ```
-adcgan-repro/
-│
-├── BigGAN-PyTorch/               
-├── custom_losses.py              
-├── custom_train_fns.py           
-├── experiments/                  
-│
-├── synthetic_1d/                 
-│   ├── train_1d.py
+Conditional-GANs-with-Auxiliary-Discriminative-Classifier/
+|
+├── Custom_py
+│   ├── custom_losses.py
+│   └── custom_train_fns.py
+├── experiments
+│   ├── acgan_12k_20251205-000221
+│   │   ├── metrics.csv
+│   │   └── notes.md
+│   ├── acgan_cifar10_biggan_20251203-170409
+│   │   ├── metrics.csv
+│   │   └── notes.md
+│   ├── adcgan_cifar10_biggan_20251116-065557
+│   │   ├── metrics.csv
+│   │   └── notes.md
+│   ├── adcgan_gamma05_12k_20251205-002946
+│   │   ├── metrics.csv
+│   │   └── notes.md
+│   ├── adcgan_gamma05_20251204-004734
+│   │   ├── metrics.csv
+│   │   └── notes.md
+│   ├── pdgan_12k_20251204-232757
+│   │   ├── metrics.csv
+│   │   └── notes.md
+│   ├── pdgan_cifar10_biggan_20251202-203055
+│   │   └── notes.md
+│   └── pdgan_cifar10_biggan_20251203-163507
+│       ├── metrics.csv
+│       └── notes.md
+├── Graph and Plots
 │   ├── acgan_synthetic_1d.png
-│   ├── adcgan_synthetic_1d.png
-│   ├── gamma_adcgan_synthetic_1d.png
-│   ├── pdgan_synthetic_1d.png
-│   ├── dloss_1d.png
-│   └── gloss_1d.png
-│
-├── plots/                        
 │   ├── adcgan_fid_cifar10.png
 │   ├── adcgan_is_cifar10.png
+│   ├── adcgan_synthetic_1d.png
+│   ├── combine_losses.py
+│   ├── combine_samples.py
+│   ├── dloss_1d.png
+│   ├── fid_0_12k_comparison.png
 │   ├── fid_adc_pd_ac.png
-│   ├── fid_adc_pd_ac_gamma_0_12k.png
+│   ├── gamma_adcgan_synthetic_1d.png
+│   ├── gloss_1d.png
+│   ├── is_0_12k_comparison.png
 │   ├── is_adc_pd_ac.png
-│   └── is_adc_pd_ac_gamma_0_12k.png
-│
-├── ML_FinalReport.pdf            
+│   ├── pdgan_synthetic_1d.png
+│   ├── synthetic_1d_losses.png
+│   └── synthetic_1d_samples.png
+├── Main Notebook
+│   └── MAIN_CODEBASE.ipynb
 └── README.md
 ```
 
@@ -160,5 +183,19 @@ These visualizations help compare diversity and training stability.
 | PD-GAN | Covers all modes | Noisy gradients |
 | **ADC-GAN** | Best accuracy | Smooth discriminator signals |
 | **γ-ADC-GAN (0.5)** | Preserves modes | Smoothest training curve |
+
+---
+
+# 6. Contribution
+
+Crystal Sembhi:
+- Trained the ADC-GAN and PD-GAN with Cifar-10.
+- Trained the AC-GAN for 1D Dataset.
+- Ran the Evaluation Metrics. 
+
+Mudit Golchha:
+- Trained the γ-ADC-GAN.
+- Created Graph and plots for all the models.
+- Ran the Evaluation Metrics.
 
 ---
